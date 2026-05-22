@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
+
+    <section class="w-full h-screen bg-black flex items-center justify-center">
+        <!-- parent -->
+        <div class=" bg-gray-600 flex flex-col p-7 gap-2 rounded-md max-w-fit">
+            <div class="">
+                <h1>TO DO LIST</h1>
+                <p>To do list simple</p>
+            </div>
+            <div class="flex gap-3">
+                <input class="bg-white rounded-xs focus:outline-none focus:border-none p-2"
+                type="text" 
+                name="input nama" 
+                id="input"
+                >
+                <button id="submit"
+                 class="bg-gray-800 text-white py-2 px-6 rounded ">Tambah</button>
+            </div>
+            <div class="flex justify-center">
+                <p id="warning"
+                class="text-red-600 font-bold"
+                ></p>
+            </div>
+            <!-- content container -->
+            <div id="content-parent"
+             class="bg-gray-700 rounded p-3 gap-2 shadow-inner shadow-slate-900">
+                <!-- content list -->
+                    <p id="kosong"></p>
+            </div>
+
+
+
+
+        </div>
+    </section>
     
+
+    <script src="main.js"></script>
 </body>
 </html>
