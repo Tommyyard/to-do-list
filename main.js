@@ -22,11 +22,12 @@ submit.addEventListener("click", () => {
     // 2. Membuat element div baru untuk membungkus satu baris list
     const itemBaru = document.createElement("div");
     itemBaru.className = "flex justify-between items-center border border-slate-400 rounded mt-2";
+    itemBaru.id = "content";
 
     // 3. Memasukkan struktur HTML list (checkbox, teks, dan tombol hapus)
     itemBaru.innerHTML = `
         <div class="flex flex-row gap-3 p-3">
-            <input type="checkbox" class="checkbox-task">
+            <input type="checkbox" class="checkbox-task" id="checkbox">
             <p class="text-white font-sans task-text">${input.value}</p>
         </div>
         <div class="flex flex-row gap-3 p-3">
@@ -35,6 +36,13 @@ submit.addEventListener("click", () => {
             </button>
         </div>
     `;
+
+    const chek = document.getElementById("checkbox")
+    itemBaru.addEventListener("click", () => {
+        chek.checked = true;
+    })
+
+    chek.checked = false;
 
     // 4. Masukkan list baru tersebut ke dalam container (content-parent)
     display.appendChild(itemBaru);
