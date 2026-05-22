@@ -27,7 +27,7 @@ submit.addEventListener("click", () => {
     // 3. Memasukkan struktur HTML list (checkbox, teks, dan tombol hapus)
     itemBaru.innerHTML = `
         <div class="flex flex-row gap-3 p-3">
-            <input type="checkbox" class="checkbox-task" id="checkbox">
+            <input type="checkbox" class="checkbox-task">
             <p class="text-white font-sans task-text">${input.value}</p>
         </div>
         <div class="flex flex-row gap-3 p-3">
@@ -36,13 +36,6 @@ submit.addEventListener("click", () => {
             </button>
         </div>
     `;
-
-    const chek = document.getElementById("checkbox")
-    itemBaru.addEventListener("click", () => {
-        chek.checked = true;
-    })
-
-    chek.checked = false;
 
     // 4. Masukkan list baru tersebut ke dalam container (content-parent)
     display.appendChild(itemBaru);
