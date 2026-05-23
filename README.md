@@ -24,7 +24,7 @@ Aplikasi **To Do List** sederhana yang dibuat dengan **TailwindCSS** (hasil komp
 
 ## Cara Menjalankan
 Opsi 1 (paling mudah):
-- Buka `index.html` langsung di browser.
+- kunjungi website `https://to-do-list-rho-ruby.vercel.app`.
 
 Opsi 2 (jika ingin rebuild CSS):
 - Jalankan script Tailwind dari `package.json` (jika tersedia di setup kamu).
